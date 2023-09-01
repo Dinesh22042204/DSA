@@ -25,11 +25,3 @@ if(len === rep1.length){
     }
 console.log(notrep)
 }
-
-/*
-const str1 = str
-for (let j = i; j < str.length; j++) {
-    if (str[i] !== str1[j]) {
-       nstr += 1
-    }
-}*/
