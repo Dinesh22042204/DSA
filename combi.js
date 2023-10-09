@@ -1,15 +1,11 @@
-let str = "dog"
+let str = "dinesh"
 
-let nstr = ''
+let nstr = []
 
 for (let i = 0; i< str.length; i++) {
-    for (let j = i + 1; j < str.length; j++) {
-        for(let k = j + 1; k < str.length; k++) {
-            nstr += str[i] + str[j] + str[k] + ","
-        }
-        nstr += str[i] + str[j] + ","
+    for (let j = i + 1; j < str.length + 1; j++) {
+       nstr.push(str.slice(i,j))
     }
-    nstr += str[i] + "," 
 }
 
-console.log (nstr)
+console.log(...nstr)
